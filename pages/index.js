@@ -1,8 +1,8 @@
-import config from "./config.json";
+import config from "../config.json";
 import styled from "styled-components";
-import { CSSReset } from "./src/components/CSSReset";
-import Menu from "./src/components/Menu";
-import { StyledTimeline } from "./src/components/TimeLine";
+import { CSSReset } from "../src/components/CSSReset";
+import Menu from "../src/components/Menu";
+import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
     const estiloDaHomePage = {
@@ -59,7 +59,7 @@ function Header() {
         <StyledHeader>
             {/*<img src="banner"/>*/}
             <section className="user-info">
-                <img src={config.fotoperfil} />
+                <img src={`https://github.com/${config.github}.png`} />
                 <div>
                     <h2>
                         {config.name}
